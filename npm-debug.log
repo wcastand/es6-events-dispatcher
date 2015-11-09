@@ -1,0 +1,95 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'E:\\node\\node.exe',
+1 verbose cli   'E:\\node\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@3.3.6
+3 info using node@v5.0.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'F:\\Web\\es6-events-dispatcher',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\William\AppData\Roaming\npm-cache\es6-events-dispatcher\1.0.0\package.tgz not in flight; packing
+9 info lifecycle es6-events-dispatcher@1.0.0~prepublish: es6-events-dispatcher@1.0.0
+10 verbose lifecycle es6-events-dispatcher@1.0.0~prepublish: unsafe-perm in lifecycle true
+11 verbose lifecycle es6-events-dispatcher@1.0.0~prepublish: PATH: E:\node\node_modules\npm\bin\node-gyp-bin;F:\Web\es6-events-dispatcher\node_modules\.bin;C:\Users\William\bin;E:\Git\mingw64\bin;E:\Git\usr\local\bin;E:\Git\usr\bin;E:\Git\usr\bin;E:\Git\mingw64\bin;E:\Git\usr\bin;C:\Users\William\bin;E:\cmder\vendor\conemu-maximus5;E:\cmder\vendor\conemu-maximus5\ConEmu;E:\OpenSSH\bin;E:\Git\cmd;E:\node;E:\VS\Microsoft VS Code\bin;E:\ffmpeg\bin;E:\Git\usr\bin;C:\Python27;E:\cmder;C:\Users\William\AppData\Local\atom\bin;E:\NSIS;C:\Users\William\AppData\Local\.meteor;C:\Program Files\Sublime Text 3;E:\node;C:\Users\William\AppData\Roaming\npm;E:\Heroku\bin;E:\Git\usr\bin\vendor_perl;E:\Git\usr\bin\core_perl
+12 verbose lifecycle es6-events-dispatcher@1.0.0~prepublish: CWD: F:\Web\es6-events-dispatcher
+13 silly lifecycle es6-events-dispatcher@1.0.0~prepublish: Args: [ '/d /s /c', 'gulp babel' ]
+14 silly lifecycle es6-events-dispatcher@1.0.0~prepublish: Returned: code: 0  signal: null
+15 verbose tar pack [ 'C:\\Users\\William\\AppData\\Roaming\\npm-cache\\es6-events-dispatcher\\1.0.0\\package.tgz',
+15 verbose tar pack   'F:\\Web\\es6-events-dispatcher' ]
+16 verbose tarball C:\Users\William\AppData\Roaming\npm-cache\es6-events-dispatcher\1.0.0\package.tgz
+17 verbose folder F:\Web\es6-events-dispatcher
+18 verbose addLocalTarball adding from inside cache C:\Users\William\AppData\Roaming\npm-cache\es6-events-dispatcher\1.0.0\package.tgz
+19 silly cache afterAdd es6-events-dispatcher@1.0.0
+20 verbose afterAdd C:\Users\William\AppData\Roaming\npm-cache\es6-events-dispatcher\1.0.0\package\package.json not in flight; writing
+21 verbose afterAdd C:\Users\William\AppData\Roaming\npm-cache\es6-events-dispatcher\1.0.0\package\package.json written
+22 silly publish { name: 'es6-events-dispatcher',
+22 silly publish   version: '1.0.0',
+22 silly publish   description: '1.0.5',
+22 silly publish   main: 'lib/dispatcher.js',
+22 silly publish   scripts: { prepublish: 'gulp babel' },
+22 silly publish   author: '',
+22 silly publish   files: [ 'lib/' ],
+22 silly publish   '...': '...',
+22 silly publish   license: 'MIT',
+22 silly publish   devDependencies: { gulp: '^3.9.0', 'gulp-babel': '^6.1.0' },
+22 silly publish   readme: 'ERROR: No README data found!',
+22 silly publish   _id: 'es6-events-dispatcher@1.0.0',
+22 silly publish   _shasum: '7b483516c0dac4187c24158020edab2754933e50',
+22 silly publish   _from: '.' }
+23 verbose getPublishConfig undefined
+24 silly mapToRegistry name es6-events-dispatcher
+25 silly mapToRegistry using default registry
+26 silly mapToRegistry registry http://registry.npmjs.org/
+27 silly mapToRegistry uri http://registry.npmjs.org/es6-events-dispatcher
+28 verbose publish registryBase http://registry.npmjs.org/
+29 silly publish uploading C:\Users\William\AppData\Roaming\npm-cache\es6-events-dispatcher\1.0.0\package.tgz
+30 verbose request uri http://registry.npmjs.org/es6-events-dispatcher
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 18:30:55
+33 verbose request using bearer token for auth
+34 verbose request id 0063802cd75b38dd
+35 http request PUT http://registry.npmjs.org/es6-events-dispatcher
+36 http 403 http://registry.npmjs.org/es6-events-dispatcher
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=60',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Mon, 09 Nov 2015 17:31:16 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-ams4136-AMS',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1447090275.871106,VS0,VE1091' }
+38 verbose request invalidating C:\Users\William\AppData\Roaming\npm-cache\registry.npmjs.org\es6-events-dispatcher on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 1.0.0." : es6-events-dispatcher
+40 verbose stack     at makeError (E:\node\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (E:\node\node_modules\npm\node_modules\npm-registry-client\lib\request.js:252:14)
+40 verbose stack     at Request._callback (E:\node\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+40 verbose stack     at Request.self.callback (E:\node\node_modules\npm\node_modules\request\request.js:198:22)
+40 verbose stack     at emitTwo (events.js:87:13)
+40 verbose stack     at Request.emit (events.js:172:7)
+40 verbose stack     at Request.<anonymous> (E:\node\node_modules\npm\node_modules\request\request.js:1063:14)
+40 verbose stack     at emitOne (events.js:82:20)
+40 verbose stack     at Request.emit (events.js:169:7)
+40 verbose stack     at IncomingMessage.<anonymous> (E:\node\node_modules\npm\node_modules\request\request.js:1009:12)
+41 verbose statusCode 403
+42 verbose pkgid es6-events-dispatcher
+43 verbose cwd F:\Web\es6-events-dispatcher
+44 error Windows_NT 10.0.10240
+45 error argv "E:\\node\\node.exe" "E:\\node\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+46 error node v5.0.0
+47 error npm  v3.3.6
+48 error code E403
+49 error "You cannot publish over the previously published version 1.0.0." : es6-events-dispatcher
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]

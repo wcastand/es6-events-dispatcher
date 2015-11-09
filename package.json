@@ -1,0 +1,17 @@
+{
+  "name": "es6-events-dispatcher",
+  "version": "1.0.0",
+  "description": "1.0.5",
+  "main": "lib/dispatcher.js",
+  "scripts": {
+    "prepublish": "gulp babel"
+  },
+  "author": "",
+  "files": ["lib/"],
+  "...": "...",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-babel": "^6.1.0"
+  }
+}
