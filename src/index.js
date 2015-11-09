@@ -3,6 +3,8 @@ export class Dispatcher{
     this.events = []
   }
   on(scope, name, callback){
+    if(!this.events[name]){
+      this.events[name] = []
     this.events[name].push({scope, callback})
   }
   off(scope, name){
