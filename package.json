@@ -2,7 +2,7 @@
   "name": "es6-events-dispatcher",
   "version": "2.0.1",
   "description": "1.0.5",
-  "main": "lib/dispatcher.js",
+  "main": "lib/index.js",
   "scripts": {
     "prepublish": "gulp babel"
   },
