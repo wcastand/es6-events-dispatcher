@@ -6,7 +6,9 @@ var jsFiles = "src/**/*.js";
 
 gulp.task("babel", function() {
     return gulp.src(jsFiles)
-        .pipe(babel())
+        .pipe(babel({
+          presets: ['es2015']
+        }))
         .pipe(gulp.dest(libDir));
 });
 
